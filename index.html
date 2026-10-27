@@ -1036,5 +1036,17 @@
       }, 300);
     }
   </script>
+  <script>
+    // สั่งให้รูปภาพทั้งหมดในหน้าเว็บ (ยกเว้นรูปโปรไฟล์) โหลดแบบ Lazy Load โดยอัตโนมัติ
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll('main img');
+      images.forEach(img => {
+        if (!img.src.includes('profile.jpg')) {
+          img.setAttribute('loading', 'lazy');
+          img.setAttribute('decoding', 'async');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
