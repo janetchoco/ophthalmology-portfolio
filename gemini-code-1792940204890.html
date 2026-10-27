@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wilasini Kuptniratsaikul, MD, MSc | Ophthalmology Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Inter, Prompt & Sarabun -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Prompt:wght@500;600;700&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            headline: ['Prompt', 'Inter', 'sans-serif'],
+            body: ['Sarabun', 'sans-serif'],
+          },
+          colors: {
+            rosepink: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4, .font-headline {
+      font-family: 'Prompt', 'Inter', sans-serif;
+    }
+    /* ซ่อน Scrollbar ของ Carousel เพื่อความสะอาดตาบนมือถือ */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* กล่องภาพคงที่ความสูงแต่กว้างตามสัดส่วนภาพจริง ไม่ครอบตัดภาพ */
+    .carousel-item {
+      height: 13rem;
+      flex-shrink: 0;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .carousel-item img, .carousel-item video {
+      height: 100%;
+      width: auto;
+      max-width: none;
+      object-fit: contain;
+      transition: transform 0.25s ease;
+    }
+    .carousel-item:hover img {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="bg-[#FAFAFA] text-slate-800 antialiased">
+
+  <!-- Mobile Sticky Top Bar -->
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-rosepink-100 shadow-sm">
+    <div class="max-w-3xl mx-auto px-4 py-2.5 flex justify-between items-center">
+      <div>
+        <span class="font-headline font-bold text-base text-slate-900 tracking-tight">Wilasini K., MD, MSc</span>
+        <span class="block text-xs text-rosepink-600 font-medium font-headline">Ophthalmology Applicant</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="CV_Wilasini.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1 bg-rosepink-50 border border-rosepink-200 text-rosepink-700 hover:bg-rosepink-100 text-xs font-semibold rounded-full transition shadow-sm font-headline">
+          <i class="fa-solid fa-file-pdf"></i> CV
+        </a>
+        <a href="#contact" class="p-1.5 text-slate-500 hover:text-rosepink-600 transition">
+          <i class="fa-solid fa-envelope text-lg"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="max-w-3xl mx-auto px-4 py-6 space-y-7">
+
+    <!-- ==================== SECTION 1: HEADER PROFILE ==================== -->
+    <header class="bg-white rounded-3xl p-6 border border-rosepink-100 shadow-sm relative overflow-hidden">
+      <div class="absolute -right-10 -top-10 w-40 h-40 bg-rosepink-50 rounded-full blur-2xl pointer-events-none"></div>
+
+      <div class="flex flex-col sm:flex-row items-center gap-6">
+        <!-- Profile Image (Vertical Rectangle) -->
+        <div class="relative shrink-0">
+          <div class="relative w-48 h-64 sm:w-52 sm:h-72 rounded-2xl overflow-hidden shadow-md ring-4 ring-rosepink-50 bg-slate-100">
+            <img src="profile.jpg" alt="Wilasini Kuptniratsaikul, MD, MSc" class="w-full h-full object-cover object-top" onerror="this.src='https://placehold.co/400x600/fff1f2/be123c?text=Dr.+Wilasini'" />
+          </div>
+          <span class="absolute bottom-1.5 right-1.5 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full"></span>
+        </div>
+
+        <!-- Bio Content -->
+        <div class="space-y-2 text-center sm:text-left flex-1">
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-headline">
+            Wilasini Kuptniratsaikul, MD, MSc.
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-slate-700">
+            Teaching Assistant, Princess Srisavangavadhana College of Medicine, Chulabhorn Royal Academy (PSMD, CRA)
+          </p>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic bg-rosepink-50/50 p-2.5 rounded-xl border border-rosepink-100/60">
+            "An interdisciplinary focus on Clinical Ophthalmology, Ophthalmic Deep Learning, and Healthcare Innovation."
+          </p>
+
+          <!-- Quick Actions with LinkedIn Button -->
+          <div class="pt-2 flex flex-wrap justify-center sm:justify-start gap-2 font-headline">
+            <a href="mailto:wilasini.kup@gmail.com" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-rosepink-600 hover:bg-rosepink-700 text-white text-xs font-medium rounded-lg transition shadow-sm">
+              <i class="fa-solid fa-envelope"></i> Email Me
+            </a>
+            <a href="tel:0850730438" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-white border border-slate-200 hover:border-rosepink-200 text-slate-700 text-xs font-medium rounded-lg transition shadow-sm">
+              <i class="fa-solid fa-phone text-rosepink-600"></i> 085-073-0438
+            </a>
+            <a href="https://www.linkedin.com/in/wilasini-kuptniratsaikul" target="_blank" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-white border border-slate-200 hover:border-blue-300 text-slate-700 text-xs font-medium rounded-lg transition shadow-sm">
+              <i class="fa-brands fa-linkedin text-[#0A66C2]"></i> LinkedIn
+            </a>
+            <a href="https://github.com/janetchoco" target="_blank" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-white border border-slate-200 hover:border-rosepink-200 text-slate-700 text-xs font-medium rounded-lg transition shadow-sm">
+              <i class="fa-brands fa-github text-slate-800"></i> GitHub
+            </a>
+            <a href="CV_Wilasini.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-rosepink-50 border border-rosepink-200 hover:bg-rosepink-100 text-rosepink-700 text-xs font-medium rounded-lg transition shadow-sm">
+              <i class="fa-solid fa-file-pdf"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ==================== SECTION 2: EDUCATION & SKILLS ==================== -->
+    <section class="space-y-3">
+      <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+        <span class="w-2 h-5 bg-rosepink-500 rounded-full inline-block"></span>
+        Education & Skills
+      </h2>
+
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-5 shadow-sm space-y-4">
+        <!-- Education List with Lightbox Modals -->
+        <div class="space-y-3.5 border-l-2 border-rosepink-200 pl-3.5 ml-1">
+          <!-- CMU -->
+          <div class="space-y-0.5">
+            <span class="text-rosepink-600 font-bold text-xs font-headline">2569</span>
+            <h3 class="font-bold text-slate-900 text-sm">ประกาศนียบัตรบัณฑิต วิชาระบาดวิทยาคลินิก มหาวิทยาลัยเชียงใหม่</h3>
+            <div class="pt-0.5">
+              <button onclick="openDocModal('assets/docs/cmu_cert.pdf', 'ประกาศนียบัตรบัณฑิต วิชาระบาดวิทยาคลินิก มหาวิทยาลัยเชียงใหม่')" class="inline-flex items-center gap-1 px-2.5 py-0.5 bg-rosepink-50 hover:bg-rosepink-100 text-rosepink-700 border border-rosepink-200 rounded-md text-xs font-medium transition font-headline">
+                <i class="fa-solid fa-graduation-cap"></i> Degree certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Chula -->
+          <div class="space-y-0.5">
+            <span class="text-rosepink-600 font-bold text-xs font-headline">2568 – 2569</span>
+            <h3 class="font-bold text-slate-900 text-sm">วท.ม. เทคโนโลยีดิจิทัลและปัญญาประดิษฐ์ในระบบสุขภาพ (หลักสูตรสหสาขาวิชา) คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</h3>
+            <div class="pt-0.5">
+              <button onclick="openDocModal('assets/docs/chula_degree.pdf', 'ใบปริญญาบัตร วท.ม. จุฬาลงกรณ์มหาวิทยาลัย')" class="inline-flex items-center gap-1 px-2.5 py-0.5 bg-rosepink-50 hover:bg-rosepink-100 text-rosepink-700 border border-rosepink-200 rounded-md text-xs font-medium transition font-headline">
+                <i class="fa-solid fa-graduation-cap"></i> Degree certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Siriraj -->
+          <div class="space-y-0.5">
+            <span class="text-rosepink-600 font-bold text-xs font-headline">2561 – 2567</span>
+            <h3 class="font-bold text-slate-900 text-sm">แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 1), คณะแพทยศาสตร์ศิริราชพยาบาล มหาวิทยาลัยมหิดล (GPAX 3.72)</h3>
+            <div class="pt-0.5 flex flex-wrap gap-2">
+              <button onclick="openDocModal('assets/docs/siriraj_degree.pdf', 'ใบปริญญาบัตร พ.บ. (เกียรตินิยมอันดับ 1) คณะแพทยศาสตร์ศิริราชพยาบาล')" class="inline-flex items-center gap-1 px-2.5 py-0.5 bg-rosepink-50 hover:bg-rosepink-100 text-rosepink-700 border border-rosepink-200 rounded-md text-xs font-medium transition font-headline">
+                <i class="fa-solid fa-graduation-cap"></i> Degree certificate
+              </button>
+              <button onclick="openDocModal('assets/docs/siriraj_transcript.pdf', 'ใบแสดงผลการศึกษา (Transcript) คณะแพทยศาสตร์ศิริราชพยาบาล')" class="inline-flex items-center gap-1 px-2.5 py-0.5 bg-rosepink-50 hover:bg-rosepink-100 text-rosepink-700 border border-rosepink-200 rounded-md text-xs font-medium transition font-headline">
+                <i class="fa-solid fa-scroll"></i> Transcript
+              </button>
+            </div>
+          </div>
+
+          <!-- MWITS -->
+          <div class="space-y-0.5">
+            <span class="text-rosepink-600 font-bold text-xs font-headline">2558 – 2561</span>
+            <h3 class="font-bold text-slate-900 text-sm">มัธยมศึกษาตอนปลาย (แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์) โรงเรียนมหิดลวิทยานุสรณ์ (GPAX 3.95)</h3>
+            <div class="pt-0.5">
+              <button onclick="openDocModal('assets/docs/mwit_transcript.pdf', 'ใบแสดงผลการศึกษา โรงเรียนมหิดลวิทยานุสรณ์')" class="inline-flex items-center gap-1 px-2.5 py-0.5 bg-rosepink-50 hover:bg-rosepink-100 text-rosepink-700 border border-rosepink-200 rounded-md text-xs font-medium transition font-headline">
+                <i class="fa-solid fa-scroll"></i> Transcript
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tests & Skills -->
+        <div class="pt-3 border-t border-slate-100 space-y-2.5">
+          <div>
+            <span class="text-xs font-semibold text-slate-600 block uppercase tracking-wider mb-1 font-headline">Standardized Tests</span>
+            <span class="inline-block px-2.5 py-0.5 bg-rosepink-50 text-rosepink-800 font-semibold text-xs rounded border border-rosepink-200">
+              CU-TEP: 104/120 (พ.ศ. 2568)
+            </span>
+          </div>
+
+          <div>
+            <span class="text-xs font-semibold text-slate-600 block uppercase tracking-wider mb-1 font-headline">Technical Skills</span>
+            <div class="flex flex-wrap gap-1.5 text-xs">
+              <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded">AI & Deep Learning (PyTorch)</span>
+              <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded">Computer Vision</span>
+              <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded">Fundus Image Analysis</span>
+              <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded">Data Visualization (Power BI)</span>
+              <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded">Platforms (Git, GitHub)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SECTION 3: CLINICAL & OPHTHALMIC TRACK ==================== -->
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <span class="w-2 h-5 bg-rosepink-500 rounded-full inline-block"></span>
+          Clinical & Ophthalmic Track
+        </h2>
+        <span class="text-xs text-rosepink-600 font-semibold bg-rosepink-50 px-2 py-0.5 rounded-full font-headline">Clinical Observerships</span>
+      </div>
+
+      <!-- 3.1 UCLA Observership -->
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">USA Observership</span>
+            <span class="text-xs text-rosepink-600 font-semibold">เม.ย. – พ.ค. 2567</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">University of California Los Angeles (UCLA), USA</h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong>รายละเอียด:</strong> Ophthalmology (3 สัปดาห์) & Neurosurgery clinical rounds, surgical observation, and academic case conferences
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex justify-between items-center text-xs text-slate-400">
+            <span>ภาพการศึกษาดูงาน</span>
+            <span class="text-rosepink-600"><i class="fa-solid fa-arrow-right-long"></i> เลื่อนดูภาพ</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory scroll-smooth">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/ucla_1.jpg" alt="UCLA Surgical Observation 1" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=UCLA+OR+Observation'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/ucla_2.jpg" alt="UCLA Surgical Observation 2" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=UCLA+Surgical+Team'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/ucla_3.jpg" alt="Ronald Reagan UCLA Medical Center" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Ronald+Reagan+Medical+Center'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/ucla_4.jpg" alt="Jules Stein Eye Institute" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Jules+Stein+Eye+Institute'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/ucla_5.jpg" alt="Jules Stein Eye Institute" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Jules+Stein+Eye+Institute'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.2 Chulabhorn Eye Clinic -->
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">Clinical Shadowing</span>
+            <span class="text-xs text-rosepink-600 font-semibold">มิ.ย. 2568 – ปัจจุบัน (สัปดาห์ละ 1 วัน)</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">คลินิกจักษุ โรงพยาบาลจุฬาภรณ์</h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong>รายละเอียด:</strong> ศึกษาดูงานที่ห้องผ่าตัด และคลินิกผู้ป่วยนอก
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/chulabhorn_or.jpg" alt="Chulabhorn Hospital Ophthalmic Surgery" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Chulabhorn+Eye+OR'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.3 Ramathibodi & Thammasat Observerships -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">Domestic Observerships</span>
+            <span class="text-xs text-rosepink-600 font-semibold">ต.ค. 2566 (แห่งละ 2 สัปดาห์)</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">ภาควิชาจักษุวิทยา รพ.รามาธิบดี และ รพ.ธรรมศาสตร์เฉลิมพระเกียรติ</h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong>รายละเอียด:</strong> การศึกษาดูงานคลินิกผู้ป่วยนอก การตรวจด้วยเครื่องมือพิเศษ (Slit-lamp examination) และการสังเกตการผ่าตัด
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/rama_tu_1.jpg" alt="Slit-lamp examination practice" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Slit-Lamp+Examination'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/rama_tu_2.jpg" alt="Clinical round team observation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Clinical+Round+Team'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/rama_tu_3.jpg" alt="Clinical round team observation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Clinical+Round+Team'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/rama_tu_4.jpg" alt="Clinical round team observation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Clinical+Round+Team'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/rama_tu_5.jpg" alt="Clinical round team observation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Clinical+Round+Team'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/rama_tu_6.jpg" alt="Clinical round team observation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Clinical+Round+Team'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.4 New Tokyo Hospital -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">Japan Observership</span>
+            <span class="text-xs text-rosepink-600 font-semibold">เม.ย. 2565 (4 สัปดาห์)</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">New Tokyo Hospital, Japan</h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong>รายละเอียด:</strong> ศึกษาดูงานทางคลินิกและระบบบริการสุขภาพในประเทศญี่ปุ่น
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/tokyo_1.jpg" alt="New Tokyo Hospital Building" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=New+Tokyo+Hospital'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/tokyo_2.jpg" alt="Closing ceremony and certificate presentation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Tokyo+Certificate+Presentation'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/tokyo_3.jpg" alt="Operating room observation Tokyo" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Tokyo+OR+Observation'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/tokyo_4.jpg" alt="Microsurgery observation Tokyo" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Tokyo+Microsurgery'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/tokyo_5.jpg" alt="Clinical observation Tokyo" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Tokyo+Clinical'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.5 Teaching Experience -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">Academic Role</span>
+            <span class="text-xs text-rosepink-600 font-semibold">มิ.ย. 2568 – ปัจจุบัน</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">Teaching Experience in Ophthalmology</h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            <strong>สถานที่:</strong> คณะแพทยศาสตร์ศรีสวางควัฒน ราชวิทยาลัยจุฬาภรณ์<br/>
+            <strong>รายละเอียด:</strong> อาจารย์ผู้ช่วยสอนนักศึกษาแพทย์ชั้นปีที่ 6 ในรายวิชาจักษุวิทยาและโสต ศอ นาสิกวิทยา
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/teaching_1.jpg" alt="Clinical skills teaching" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Teaching+Session+1'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/teaching_2.jpg" alt="Ophthalmoscopy demonstration" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Indirect+Ophthalmoscopy+Teaching'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/clinical/teaching_3.jpg" alt="Small group clinical workshop" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Clinical+Workshop'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.6 Ophthalmology Residency Open House (6 สถาบัน 2 แถว) -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-4">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">Departmental Open House</span>
+            <span class="text-xs text-rosepink-600 font-semibold font-headline">2568</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            Ophthalmology Residency Open House
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600">
+            การเข้าร่วมกิจกรรมเปิดบ้านแนะนำหลักสูตรฝึกอบรมแพทย์ประจำบ้าน ภาควิชาจักษุวิทยา 6 สถาบัน
+          </p>
+        </div>
+
+        <div class="space-y-4 pt-1 border-t border-slate-100">
+          <!-- แถวที่ 1: จุฬาฯ | รามาธิบดี | ศิริราช -->
+          <div>
+            <div class="grid grid-cols-3 gap-2.5 sm:gap-3">
+              <div class="bg-slate-50/70 rounded-xl p-1.5 sm:p-2 border border-slate-200/80 flex flex-col justify-between group hover:border-rosepink-200 transition">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-200 cursor-pointer relative" onclick="openPhotoModal(this)">
+                  <img src="assets/openhouse/chula.jpg" alt="Chulalongkorn Ophthalmology Open House" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Chula+OpenHouse'" />
+                </div>
+                <div class="mt-1.5 text-center">
+                  <h4 class="font-bold text-[11px] sm:text-xs text-slate-900 font-headline leading-tight">จุฬาลงกรณ์มหาวิทยาลัย</h4>
+                </div>
+              </div>
+
+              <div class="bg-slate-50/70 rounded-xl p-1.5 sm:p-2 border border-slate-200/80 flex flex-col justify-between group hover:border-rosepink-200 transition">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-200 cursor-pointer relative" onclick="openPhotoModal(this)">
+                  <img src="assets/openhouse/rama.jpg" alt="Ramathibodi Ophthalmology Open House" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rama+OpenHouse'" />
+                </div>
+                <div class="mt-1.5 text-center">
+                  <h4 class="font-bold text-[11px] sm:text-xs text-slate-900 font-headline leading-tight">โรงพยาบาลรามาธิบดี</h4>
+                </div>
+              </div>
+
+              <div class="bg-slate-50/70 rounded-xl p-1.5 sm:p-2 border border-slate-200/80 flex flex-col justify-between group hover:border-rosepink-200 transition">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-200 cursor-pointer relative" onclick="openPhotoModal(this)">
+                  <img src="assets/openhouse/siriraj.jpg" alt="Siriraj Ophthalmology Open House" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Siriraj+OpenHouse'" />
+                </div>
+                <div class="mt-1.5 text-center">
+                  <h4 class="font-bold text-[11px] sm:text-xs text-slate-900 font-headline leading-tight">ศิริราชพยาบาล</h4>
+                  <p class="text-[10px] sm:text-[11px] text-slate-500 line-clamp-2 mt-0.5">รางวัลเย็บดีเด่น</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- แถวที่ 2: ธรรมศาสตร์ | ขอนแก่น | ราชวิถี -->
+          <div class="pt-2 border-t border-slate-100">
+            <div class="grid grid-cols-3 gap-2.5 sm:gap-3">
+              <div class="bg-slate-50/70 rounded-xl p-1.5 sm:p-2 border border-slate-200/80 flex flex-col justify-between group hover:border-rosepink-200 transition">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-200 cursor-pointer relative" onclick="openPhotoModal(this)">
+                  <img src="assets/openhouse/tu.jpg" alt="Thammasat Ophthalmology Open House" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=TU+OpenHouse'" />
+                </div>
+                <div class="mt-1.5 text-center">
+                  <h4 class="font-bold text-[11px] sm:text-xs text-slate-900 font-headline leading-tight">มหาวิทยาลัยธรรมศาสตร์</h4>
+                </div>
+              </div>
+
+              <div class="bg-slate-50/70 rounded-xl p-1.5 sm:p-2 border border-slate-200/80 flex flex-col justify-between group hover:border-rosepink-200 transition">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-200 cursor-pointer relative" onclick="openPhotoModal(this)">
+                  <img src="assets/openhouse/kku.jpg" alt="Khon Kaen University Ophthalmology Open House" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=KKU+OpenHouse'" />
+                </div>
+                <div class="mt-1.5 text-center">
+                  <h4 class="font-bold text-[11px] sm:text-xs text-slate-900 font-headline leading-tight">มหาวิทยาลัยขอนแก่น</h4>
+                </div>
+              </div>
+
+              <div class="bg-slate-50/70 rounded-xl p-1.5 sm:p-2 border border-slate-200/80 flex flex-col justify-between group hover:border-rosepink-200 transition">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden bg-slate-200 cursor-pointer relative" onclick="openPhotoModal(this)">
+                  <img src="assets/openhouse/rj.jpg" alt="Rajavithi Hospital Ophthalmology Open House" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rajavithi+OpenHouse'" />
+                </div>
+                <div class="mt-1.5 text-center">
+                  <h4 class="font-bold text-[11px] sm:text-xs text-slate-900 font-headline leading-tight">โรงพยาบาลราชวิถี</h4>
+                  <p class="text-[10px] sm:text-[11px] text-slate-500 line-clamp-2 mt-0.5">รางวัลตอบคำถาม</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SECTION 4: RESEARCH, CASE REPORTS & AI ==================== -->
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <span class="w-2 h-5 bg-rosepink-500 rounded-full inline-block"></span>
+          Research, Case Reports & AI
+        </h2>
+        <span class="text-xs text-rosepink-600 font-semibold bg-rosepink-50 px-2 py-0.5 rounded-full font-headline">Scholarship</span>
+      </div>
+
+      <!-- Project 1: Featured RetinAI -->
+      <div class="bg-white rounded-2xl border-2 border-rosepink-200 p-4 sm:p-5 shadow-sm space-y-3.5">
+        <div class="space-y-1">
+          <div class="flex flex-wrap items-center gap-2 font-headline">
+            <span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 text-[11px] font-bold rounded uppercase">Completed • Independent Study</span>
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-700 text-[11px] font-semibold rounded">Primary Investigator</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+            Deep Learning for the Diagnosis of Diabetic Retinopathy and Age-Related Macular Degeneration from Retinal Fundus Photographs
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <strong>Case Breakdown:</strong> การพัฒนาและทดสอบโมเดลจำแนกภาพ Fundus เพื่อแยกภาวะเบาหวานขึ้นจอตา (DR) และโรคจุดรับภาพชัดจอตาเสื่อมในผู้สูงอายุ (AMD) ออกจากกัน พร้อมระบบ Grad-CAM แสดงตำแหน่งรอยโรค
+          </p>
+        </div>
+
+        <div>
+          <a href="https://retin-ai-revised2.vercel.app" target="_blank" class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-rosepink-600 hover:bg-rosepink-700 text-white rounded-lg text-xs font-bold transition shadow-sm font-headline">
+            <i class="fa-solid fa-rocket"></i> ทดลองใช้งาน RetinAI Live Demo
+          </a>
+        </div>
+
+        <div class="space-y-1 pt-1">
+          <div class="flex justify-between items-center text-xs text-slate-400">
+            <span>ระบบ RetinAI และโปสเตอร์วิจัย (Bridge AI Summit 2026)</span>
+            <span class="text-rosepink-600"><i class="fa-solid fa-arrow-right-long"></i> เลื่อนดูภาพ</span>
+          </div>
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/research/retinai_home.jpg" alt="RetinAI Web Interface" onerror="this.src='https://placehold.co/400x250/fff1f2/be123c?text=RetinAI+Landing+Page'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/research/retinai_result.jpg" alt="RetinAI Multi-model & Grad-CAM outputs" onerror="this.src='https://placehold.co/400x250/fff1f2/be123c?text=RetinAI+Grad-CAM+Output'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/research/poster_presentation_1.jpg" alt="Poster presentation Bridge AI summit 2026" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Bridge+AI+Poster'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/research/poster_presentation_2.jpg" alt="Poster presentation and discussion at Bridge AI summit 2026" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=Poster+Presentation'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Glaucoma Deep Learning -->
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-4 sm:p-5 shadow-sm space-y-1.5">
+        <div class="flex flex-wrap items-center gap-2 font-headline">
+          <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-[11px] font-bold rounded uppercase">Ongoing</span>
+          <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-700 text-[11px] font-semibold rounded">Primary Investigator</span>
+          <span class="text-xs text-slate-500">คณะแพทยศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</span>
+        </div>
+        <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+          Deep learning for the diagnosis of glaucomatous optic neuropathy and non-glaucomatous optic neuropathy from retinal fundus photographs
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <strong>Case Breakdown:</strong> การจำแนกภาพ Fundus เพื่อแยกภาวะขั้วประสาทตาผิดปกติจากต้อหิน (Glaucomatous Optic Neuropathy) ออกจากโรคเส้นประสาทตาชนิดอื่น (Non-glaucomatous)
+        </p>
+      </div>
+
+      <!-- Project 3: SMILE Case Report -->
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-4 sm:p-5 shadow-sm space-y-1.5">
+        <div class="flex flex-wrap items-center gap-2 font-headline">
+          <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-[11px] font-bold rounded uppercase">Ongoing Case Report</span>
+          <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-700 text-[11px] font-semibold rounded">Primary Investigator</span>
+          <span class="text-xs text-slate-500">คณะแพทยศาสตร์ศรีสวางควัฒน ราชวิทยาลัยจุฬาภรณ์</span>
+        </div>
+        <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+          Delayed Manifestation of Epithelial Basement Membrane Dystrophy After Small-Incision Lenticule Extraction (SMILE): A Case Report
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <strong>Case Breakdown:</strong> พยาธิสภาพหลังทำผ่าตัดแก้ไขสายตา SMILE, การตรวจวินิจฉัยทางกระจกตา และแนวทางการดูแลรักษาทางคลินิก
+        </p>
+      </div>
+
+      <!-- Project 4: Refractive Surgery Meta-Analysis -->
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-4 sm:p-5 shadow-sm space-y-1.5">
+        <div class="flex flex-wrap items-center gap-2 font-headline">
+          <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-[11px] font-bold rounded uppercase">Ongoing Meta-Analysis</span>
+          <span class="px-2 py-0.5 bg-slate-100 text-slate-700 text-[11px] font-semibold rounded">Co-Investigator</span>
+          <span class="text-xs text-slate-500">คณะแพทยศาสตร์ศรีสวางควัฒน ราชวิทยาลัยจุฬาภรณ์</span>
+        </div>
+        <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+          Incidence, Risk Factors, and Outcomes of Enhancement After Corneal Refractive Surgery: A Systematic Review and Meta-Analysis
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <strong>Case Breakdown:</strong> การวิเคราะห์อุบัติการณ์และปัจจัยเสี่ยงของการผ่าตัดแก้ไขสายตา (Enhancement) หลังการผ่าตัดแก้ไขสายตาผิดปกติ
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ==================== SECTION 5: HEALTH INNOVATIONS & HACKATHONS ==================== -->
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <span class="w-2 h-5 bg-rosepink-500 rounded-full inline-block"></span>
+          Health Innovations & Hackathons
+        </h2>
+        <span class="text-xs text-rosepink-600 font-semibold bg-rosepink-50 px-2 py-0.5 rounded-full font-headline">Innovator Showcase</span>
+      </div>
+
+      <!-- 5.1 MamaMate -->
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-amber-100 text-amber-900 text-[11px] font-bold rounded uppercase">Winner 2026</span>
+            <span class="text-xs text-slate-500">Asia-Pacific Global Health Hackathon</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            MamaMate (รางวัลชนะเลิศ - Asia-Pacific Global Health Innovation Hackathon 2026)
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            AI-powered nutrition companion ส่วนต่อขยายแอปพลิเคชันสำหรับ อสม. ในการดูแลแม่และเด็กวัย 0–24 เดือนในชนบท
+          </p>
+          <div class="pt-0.5">
+            <a href="https://www.singhealth.com.sg/news/global-health/singhealth-duke-nus-academic-medical-centre-announces-hackathon-" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-rosepink-600 hover:text-rosepink-800 transition font-headline">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> ข่าวประชาสัมพันธ์จาก SingHealth
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/mamamate_1.jpg" alt="MamaMate Award Stage Winner" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=MamaMate+Winner+Stage'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/mamamate_2.jpg" alt="MamaMate Team Development" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=MamaMate+Teamwork'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/mamamate_3.jpg" alt="MamaMate Mentor Discussion" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=MamaMate+Mentorship'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/mamamate_4.jpg" alt="MamaMate Final Pitching" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=MamaMate+Pitching'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5.2 BrainPlay -->
+      <div class="bg-white rounded-2xl border border-rosepink-100 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-amber-100 text-amber-900 text-[11px] font-bold rounded uppercase">Winner 2025</span>
+            <span class="text-xs text-slate-500">MIT Media Lab @ Bangkok</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            BrainPlay (รางวัลชนะเลิศ - AI & Robotics Hackathon by MIT Media Lab @ Bangkok 2025)
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            นวัตกรรม Multimodal AI ชะลอภาวะสมองเสื่อมในรูปแบบเกม
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/brainplay_1.jpg" alt="BrainPlay Winner Stage" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=BrainPlay+Winner+Stage'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/brainplay_2.jpg" alt="BrainPlay System Pitching" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=BrainPlay+Presentation'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/brainplay_3.jpg" alt="BrainPlay Teamwork" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=BrainPlay+Teamwork'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5.3 PlaTongo! -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-700 text-[11px] font-bold rounded uppercase">Honorable Mention 2026</span>
+            <span class="text-xs text-slate-500">NTU Hackathon</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            PlaTongo! (รางวัลชมเชย - NTU Hackathon: Innovation Functional Recovery 2026)
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            อุปกรณ์ช่วยฟื้นฟูองศาการเคลื่อนไหวของรยางค์ส่วนบนในรูปแบบเกม (โปรแกรม Unity)
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start bg-slate-900 relative">
+              <video src="assets/hackathons/platongo_demo.mp4" autoplay muted loop playsinline></video>
+              <span class="absolute bottom-1.5 left-1.5 px-2 py-0.5 bg-black/60 text-white text-[10px] rounded backdrop-blur-sm font-headline">คลิปสาธิตเกม</span>
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/platongo_1.jpg" alt="PlaTongo Team and Award Presentation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=PlaTongo+Award'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/platongo_2.jpg" alt="PlaTongo Device Demonstration" onerror="this.src='https://placehold.co/300x400/fff1f2/be123c?text=PlaTongo+Prototype'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/platongo_3.jpg" alt="PlaTongo Rapid Prototyping Workshop" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=PlaTongo+Fabrication'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5.4 HerGene -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-0.5">
+          <div class="flex justify-between items-baseline font-headline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">2nd Runner-Up 2025</span>
+            <span class="text-xs text-slate-500">Siriraj x MIT Hacking Medicine</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            HerGene (รางวัลรองชนะเลิศอันดับ 2 - Siriraj x MIT Hacking Medicine 2025)
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            ชุดตรวจการกลายพันธุ์ทางพันธุกรรมสำหรับมะเร็งเต้านมด้วยเทคนิค CRISPR-Cas9 ณ จุดดูแลผู้ป่วย
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-3 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/hergene_1.jpg" alt="HerGene Diagnostic Concept Slide" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=HerGene+Slide'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/hergene_2.jpg" alt="Siriraj x MIT Award Stage" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Siriraj+MIT+Award'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/hackathons/hergene_3.jpg" alt="HerGene Pitching Session" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=HerGene+Pitching'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5.5 Scientific Honors: CERN & Space Camp -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-4">
+        <div class="flex justify-between items-baseline font-headline">
+          <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[11px] font-bold rounded uppercase">National Scientific Honors</span>
+          <span class="text-xs text-slate-500">2560</span>
+        </div>
+        <h3 class="text-sm sm:text-base font-bold text-slate-900 -mt-2">
+          โครงการความร่วมมือทางวิทยาศาสตร์ระดับนานาชาติ (CERN & Space Camp)
+        </h3>
+
+        <!-- CERN -->
+        <div class="space-y-2 pt-1 border-t border-slate-100">
+          <div class="space-y-0.5">
+            <h4 class="font-bold text-slate-900 text-xs sm:text-sm text-rosepink-700">
+              1. Thai-CERN Collaboration Program
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              ผู้แทนประเทศไทยศึกษาดูงาน ณ เซิร์น (CERN) สมาพันธรัฐสวิส ตามแนวพระราชดำริ สมเด็จพระกนิษฐาธิราชเจ้า กรมสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี
+            </p>
+          </div>
+
+          <div class="flex gap-3 overflow-x-auto pb-1.5 pt-0.5 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/cern_1.jpg" alt="CERN Study Trip 1" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=CERN+Study+Trip'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/cern_2.jpg" alt="CERN Geneva Switzerland" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=CERN+Geneva'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/cern_3.jpg" alt="CERN Particle Physics Lab" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=CERN+Laboratory'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/cern_4.jpg" alt="CERN Group Delegation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=CERN+Delegation'" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Space Camp -->
+        <div class="space-y-2 pt-2 border-t border-slate-100">
+          <div class="space-y-0.5">
+            <h4 class="font-bold text-slate-900 text-xs sm:text-sm text-rosepink-700">
+              2. Discover Thailand's Astronaut Scholarship Program (DTAS) & Space Camp
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              รางวัลชนะเลิศทุนการศึกษาค้นพบนักบินอวกาศไทย และผู้แทนประเทศไทยเข้าร่วม Space Camp ณ U.S. Space & Rocket Center เมือง Huntsville รัฐแอละแบมา สหรัฐอเมริกา
+            </p>
+          </div>
+
+          <div class="flex gap-3 overflow-x-auto pb-1.5 pt-0.5 no-scrollbar snap-x snap-mandatory">
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/space_1.jpg" alt="U.S. Space Camp Huntsville Alabama" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Space+Camp+USA'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/space_2.jpg" alt="Space Camp Astronaut Simulation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Space+Simulation'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/space_3.jpg" alt="Rocket Center Training" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rocket+Center'" />
+            </div>
+            <div class="carousel-item snap-start" onclick="openPhotoModal(this)">
+              <img src="assets/honors/space_4.jpg" alt="Space Camp Award Presentation" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Space+Camp+Award'" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SECTION 6: LEADERSHIP & COMMUNITY OUTREACH ==================== -->
+    <section class="space-y-4">
+      <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-rosepink-500 rounded-full inline-block"></span>
+        Academic Leadership & Community Outreach
+      </h2>
+
+      <!-- 6.1 RCOPT MC -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-1">
+          <div class="flex justify-between items-baseline">
+            <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[10px] font-bold rounded-md uppercase">RCOPT Master of Ceremonies</span>
+            <span class="text-xs text-rosepink-600 font-semibold">2568</span>
+          </div>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            พิธีกรดำเนินรายการ (MC): การประชุมวิชาการประจำปี ครั้งที่ 53 และ 54 ราชวิทยาลัยจักษุแพทย์แห่งประเทศไทย (RCOPT)
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            การดำเนินรายการการประชุมวิชาการระดับชาติ "Trends and Insights in Our Practice"
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="shrink-0 w-52 sm:w-60 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rcopt_1.jpg" alt="RCOPT MC on Stage" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=RCOPT+MC+Podium'" />
+            </div>
+            <div class="shrink-0 w-52 sm:w-60 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rcopt_2.jpg" alt="RCOPT 2025 Backdrop" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=RCOPT+Backdrop'" />
+            </div>
+            <div class="shrink-0 w-52 sm:w-60 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rcopt_3.jpg" alt="RCOPT Certificate Presentation" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=RCOPT+Certificate'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6.2 Laksi Vision Screening -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-1">
+          <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[10px] font-bold rounded-md uppercase">Community Vision Screening</span>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            หน่วยตรวจตา “รักษ์ตา รู้ทันก่อนพร่าเลือน” งานบริการวิชาการและสังคม ณ เคหะชุมชนหลักสี่
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            การตรวจคัดกรองสายตาและความผิดปกติทางจักษุวิทยาเบื้องต้นแก่ประชาชนในชุมชน
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="shrink-0 w-52 sm:w-60 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/laksi_1.jpg" alt="Laksi Community Vision Screening Attendees" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Laksi+Screening+Community'" />
+            </div>
+            <div class="shrink-0 w-52 sm:w-60 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/laksi_2.jpg" alt="PSMD CRA Medical Screening Team" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Laksi+Screening+Team'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6.3 Volunteer Medical Camp -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="space-y-1">
+          <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[10px] font-bold rounded-md uppercase">Rural Health Outreach</span>
+          <h3 class="text-sm sm:text-base font-bold text-slate-900">
+            แพทย์อาสา: ออกตรวจรักษาโรคทั่วไปและส่งเสริมสุขภาพในพื้นที่ห่างไกล
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            - โครงการอาสาจุฬาภรณ์ ต.บ้านหลวง จ.น่าน: ตรวจโรค และกิจกรรมฐาน Health education
+          </p>
+        </div>
+
+        <!-- Horizontal Slide: น่าน -->
+        <div class="space-y-1">
+          <div class="flex gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/nan_volunteer_1.jpg" alt="Chulabhorn Volunteer Doctor Camp Nan Province" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Nan+Medical+Camp'" />
+            </div>
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/nan_volunteer_2.jpg" alt="Chulabhorn Volunteer Doctor Camp Nan Province" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Nan+Medical+Camp'" />
+            </div>
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/nan_volunteer_3.jpg" alt="Chulabhorn Volunteer Doctor Camp Nan Province" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Nan+Medical+Camp'" />
+            </div>
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/nan_volunteer_4.jpg" alt="Chulabhorn Volunteer Doctor Camp Nan Province" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Nan+Medical+Camp'" />
+            </div>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed mt-2">
+            - ออกหน่วย ณ อมก๋อย, แม่ระมาด, แก่งกระจาน: ตรวจโรคเบื้องต้น แจกยา กำจัดเหา เคลือบฟัน
+          </p>
+        </div>
+
+        <!-- Horizontal Slide: ออกหน่วย -->
+        <div class="space-y-1">
+          <div class="flex gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory">
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rural_1.JPG" alt="Rural Outreach Omkoi" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rural+Camp+1'" />
+            </div>
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rural_2.JPG" alt="Rural Outreach Mae Ramat" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rural+Camp+2'" />
+            </div>
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rural_3.JPG" alt="Rural Outreach Kaeng Krachan" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rural+Camp+3'" />
+            </div>
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rural_4.JPG" alt="Rural Medical Support" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rural+Camp+4'" />
+            </div>
+            <div class="shrink-0 w-64 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 snap-start cursor-pointer" onclick="openPhotoModal(this)">
+              <img src="assets/outreach/rural_5.JPG" alt="Rural Health Education" class="w-full h-full object-cover hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/fff1f2/be123c?text=Rural+Camp+5'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6.4 School for the Blind -->
+      <div class="bg-white rounded-2xl border border-rosepink-150 p-4 sm:p-5 shadow-sm space-y-2">
+        <span class="px-2 py-0.5 bg-rosepink-100 text-rosepink-800 text-[10px] font-bold rounded-md uppercase">Vision & Education Volunteering</span>
+        <h3 class="text-sm sm:text-base font-bold text-slate-900">
+          งานบริการสังคม
+        </h3>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          - ครูอาสาสมัคร ณ โรงเรียนสอนคนตาบอดกรุงเทพ (The Bangkok School for the Blind)
+        </p>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          - ครูอาสาสมัครสอนภาษาอังกฤษให้กับนักเรียนขาดโอกาส Saturday School International
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer & Contact -->
+  <footer id="contact" class="bg-white border-t border-rosepink-100 mt-12 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-3xl mx-auto px-4 space-y-2">
+      <p class="font-bold text-slate-800 font-headline">Wilasini Kuptniratsaikul, MD, MSc.</p>
+      <p>Bangkok, Thailand • Email: <a href="mailto:wilasini.kup@gmail.com" class="text-rosepink-600 font-medium">wilasini.kup@gmail.com</a> • โทร: 085-073-0438</p>
+      <p class="text-[11px] text-slate-600 pt-2">
+        All clinical and research case records are strictly de-identified in full adherence to patient privacy and medical ethics standards.
+      </p>
+      <p class="text-[10px] text-slate-400 pt-1">© 2026 Wilasini Kuptniratsaikul. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- Fullscreen Modal สำหรับขยายดูรูปกิจกรรม -->
+  <div id="photo-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity duration-300 opacity-0" onclick="closePhotoModal()">
+    <div class="relative max-w-xl w-full max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+      <button onclick="closePhotoModal()" class="absolute -top-10 right-0 text-white text-2xl hover:text-rosepink-300 transition" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="photo-modal-img" src="" alt="Enlarged preview" class="max-w-full max-h-[80vh] object-contain rounded-xl shadow-2xl bg-white" />
+      <p id="photo-modal-caption" class="text-white text-xs text-center mt-3 font-medium px-4"></p>
+    </div>
+  </div>
+
+  <!-- Document Lightbox Modal สำหรับดู PDF หลายหน้า + ปุ่ม Download -->
+  <div id="doc-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-3 sm:p-4 transition-opacity duration-300 opacity-0" onclick="closeDocModal()">
+    <div class="relative max-w-2xl w-full max-h-[92vh] flex flex-col items-center bg-white p-4 rounded-2xl shadow-2xl" onclick="event.stopPropagation()">
+      
+      <!-- Modal Header -->
+      <div class="w-full flex justify-between items-center mb-3 pb-2 border-b border-slate-100 gap-2">
+        <h4 id="doc-modal-title" class="font-bold text-slate-900 text-xs sm:text-sm truncate font-headline flex-1"></h4>
+        
+        <!-- Action Buttons: Download PDF & Close -->
+        <div class="flex items-center gap-2 shrink-0">
+          <a id="doc-modal-download" href="#" download class="inline-flex items-center gap-1.5 px-3 py-1 bg-rosepink-50 hover:bg-rosepink-100 text-rosepink-700 border border-rosepink-200 rounded-lg text-xs font-semibold transition font-headline shadow-sm">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+          <button onclick="closeDocModal()" class="w-7 h-7 flex items-center justify-center rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition" aria-label="Close document">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- PDF Viewer Frame (แสดง PDF ได้หลายหน้า รองรับการ Scroll) -->
+      <div class="w-full h-[75vh] overflow-hidden bg-slate-50 rounded-xl border border-slate-200 relative">
+        <iframe id="doc-modal-frame" src="" class="w-full h-full rounded-xl" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Lightbox Modal Scripts -->
+  <script>
+    // Photo Modal Script
+    function openPhotoModal(container) {
+      const img = container.querySelector('img');
+      if (!img) return;
+      const modal = document.getElementById('photo-modal');
+      const modalImg = document.getElementById('photo-modal-img');
+      const modalCaption = document.getElementById('photo-modal-caption');
+
+      modalImg.src = img.src;
+      modalCaption.innerText = img.alt || '';
+      
+      modal.classList.remove('hidden');
+      setTimeout(() => { modal.classList.remove('opacity-0'); }, 10);
+    }
+
+    function closePhotoModal() {
+      const modal = document.getElementById('photo-modal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => { modal.classList.add('hidden'); }, 300);
+    }
+
+    // Document Modal Script (PDF Multi-page & Download)
+    function openDocModal(src, title) {
+      const modal = document.getElementById('doc-modal');
+      const modalFrame = document.getElementById('doc-modal-frame');
+      const modalTitle = document.getElementById('doc-modal-title');
+      const modalDownload = document.getElementById('doc-modal-download');
+
+      // โหลดไฟล์ PDF เข้า iframe และตั้งค่าปุ่มดาวน์โหลด
+      modalFrame.src = src;
+      modalTitle.innerText = title;
+      modalDownload.href = src;
+
+      modal.classList.remove('hidden');
+      setTimeout(() => { modal.classList.remove('opacity-0'); }, 10);
+    }
+
+    function closeDocModal() {
+      const modal = document.getElementById('doc-modal');
+      const modalFrame = document.getElementById('doc-modal-frame');
+      modal.classList.add('opacity-0');
+      setTimeout(() => { 
+        modal.classList.add('hidden');
+        modalFrame.src = ''; // เคลียร์ src เมื่อปิด modal เพื่อหยุดการทำงานในพื้นหลัง
+      }, 300);
+    }
+  </script>
+</body>
+</html>
